@@ -20,7 +20,7 @@ public class PatronProxyMain {
         // Obtener un proxy auditable
         IProcesos ProcesoActivoAuditable = FabricaServicios.CrearEjecucionProceso(true);
         try {
-            ProcesoActivoAuditable.EjecutarProcesos(1, email3, password3);
+            ProcesoActivoAuditable.EjecutarProcesos(1, email, password);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
