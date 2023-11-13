@@ -13,7 +13,7 @@ public class PatronProxyMain {
         String email2 = "erick@prueba.com";
         String password2 = "123456";
 
-        String email3 = "admin2000@hotmail.com";
+        String email3 = "admin@hotmail.com";
         String password3 = "12345";
 
 
@@ -28,7 +28,7 @@ public class PatronProxyMain {
         // Obtener un proxy no auditable
         IProcesos ProcesoActivoNoAuditable = FabricaServicios.CrearEjecucionProceso(false);
         try {
-            ProcesoActivoNoAuditable.EjecutarProcesos(2, email2, password2);
+            ProcesoActivoNoAuditable.EjecutarProcesos(2, email3, password3);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
