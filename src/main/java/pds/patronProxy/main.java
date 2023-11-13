@@ -3,7 +3,7 @@ package pds.patronProxy;
 import pds.patronProxy.service.FabricaServicios;
 import pds.patronProxy.implementation.IProcesos;
 
-public class PatronProxyMain {
+public class main {
 
     public static void main(String[] args) {
 
