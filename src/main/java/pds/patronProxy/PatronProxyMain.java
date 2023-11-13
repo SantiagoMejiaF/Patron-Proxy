@@ -3,14 +3,14 @@ package pds.patronProxy;
 import pds.patronProxy.service.FabricaServicios;
 import pds.patronProxy.implementation.IProcesos;
 
-public class main {
+public class PatronProxyMain {
 
     public static void main(String[] args) {
 
         String email = "santiagomejia2000@hotmail.com";
         String password = "123456";
 
-        String email2 = "erick@prueba.com";
+        String email2 = "erickruiz1452@hotmail.com";
         String password2 = "123456";
 
         String email3 = "admin@hotmail.com";
@@ -28,7 +28,7 @@ public class main {
         // Obtener un proxy no auditable
         IProcesos ProcesoActivoNoAuditable = FabricaServicios.CrearEjecucionProceso(false);
         try {
-            ProcesoActivoNoAuditable.EjecutarProcesos(2, email3, password3);
+            ProcesoActivoNoAuditable.EjecutarProcesos(2, email2, password2);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
