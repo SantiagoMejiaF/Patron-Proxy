@@ -10,8 +10,8 @@ import java.sql.ResultSet;
 public class Seguridad {
 
     public boolean Autorizacion(String email, String password) {
-        try (Connection connection = DriverManager.getConnection(ConfiguracionDB.URL_CONEXION,
-                ConfiguracionDB.USUARIO, ConfiguracionDB.CONTRASENA)) {
+        try (Connection connection = DriverManager.getConnection(ConfiguracionDB.DB_URL_CONEXION,
+                ConfiguracionDB.DB_USER, ConfiguracionDB.DB_PASSWORD)) {
             String consulta = "SELECT * FROM usuarios WHERE email = ? AND password = ?";
             try (PreparedStatement statement = connection.prepareStatement(consulta)) {
                 statement.setString(1, email);
